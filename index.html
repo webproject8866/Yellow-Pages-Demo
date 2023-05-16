@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- now we are making and add a externel css style file just for our social icons adjustment -->
+  <link rel="stylesheet" href="custom.css">
+
+  <title>Find a local Business, Products,</title>
+
+  <!-- this is CDN that take from font awsome website to add the icon on the button -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- here is the code how to add icon in title of your website -->
+  <link rel="icon" href="logo.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> -->
+
+  <!-- /h1>Hello, world!</h1> -->
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <img height="32px" width="103px"
+        src="//static.yellowpages.ca/ypca/ypui-6.76.0.1-20230314.0455/resources/images/verticals/yellowpages/logo-en.svg"
+        alt="">
+      <ul class=" color1 nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link" href="#">People Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Adertise with us</a>
+        </li>
+        <li class="nav-item">
+          <!-- here i add the code how to open modal with list iten=m just start from data toggle to modal -->
+          <a class="nav-link" data-toggle="modal" data-target="#JoinModal" style="font-weight: bold;" href="#">Join</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#LoginModal" style="font-weight: bold;"
+            href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">FR</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Button trigger modal -->
+  <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="JoinModal">
+  Launch demo modal
+</button> -->
+
+  <!-- Modal Join -->
+  <div class="modal fade" id="JoinModal" tabindex="-1" aria-labelledby="JoinModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:#f3d111;">
+          <h5 class="modal-title" id="loginModalLabel"><b>Contect with YP</b> and start enjoying a whole slew of perks!
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid ">
+            <!-- here i use the grid system to make this modal more responsive first take a row and put box1 and box2 inside this div and give box1 and box 2 column in which lg screen both box take 6,6 col mean half half screen all other devices md sm and xsmal box1 and 2 take 12 col means full full screen and box2 will slipt down-->
+            <div class="row text-center">
+              <!-- box 1 -->
+              <div class="box1-join  col-lg-6 col-md-12 col-sm-12 col-12">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1" style="font-family: sans-serif;">Singup with Your Email</label>
+                    <input type="email" class="mail-textbox" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter email">
+                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                  </div>
+                  <button type="submit" class=" button-signup btn btn-warning"
+                    style="font-weight: bold;">Signup</button>
+                  <small id="emailHelp" class="form-text text-muted">By signing up, I accept the terms of use agreement.
+                    <br> An email will be sent to confirm my account.</small>
+                </form>
+              </div>
+              <!-- box 2 -->
+              <div class="box2-join col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                <form>
+                  <label for="exampleInputEmail1" style="font-family: sans-serif;">Singup with Socaial Accoutns</label>
+                  <button type="submit" class="button-fb btn  my-3" style="font-weight: bold;">Sign Up with FaceBook<i
+                      class="fa-brands fa-facebook-f icon-fb"></i></button>
+                  <button type="submit" class=" button-google btn" style="font-weight: bold;" href="#">Sign Up with
+                    Google <i class="fa-brands fa-google icon-fb"></i></button>
+                  <small id="emailHelp" class="form-text text-muted">By signing up, I accept the terms of use agreement.
+                    <br> An email will be sent to confirm my account.</small>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <p class="footer"><a href="#" data-toggle="modal" data-target="#LoginModal">Already have Account Click
+              Login</a></p>
+          <p>© 2022-2023 Yellow Page.com, Inc. · <a href="#">Privacy</a> · <a href="#">Contact Us</a></p>
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Model Login -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header" style="background-color: #f3d111;">
+          <h5 class="modal-title" id="JoinModalLabel">Connect Your YP Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid ">
+            <!-- here i use the grid system to make this modal more responsive first take a row and put box1 and box2 inside this div and give box1 and box 2 column in which lg screen both box take 6,6 col mean half half screen all other devices md sm and xsmal box1 and 2 take 12 col means full full screen and box2 will slipt down-->
+            <div class="row">
+              <!-- box 1 -->
+              <div class="box1-login col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+                <form>
+                  <label for="exampleInputEmail1" style="font-family: sans-serif;">social Logins</label><br>
+                  <button type="submit" class="button-fb btn  my-3" style="font-weight: bold;">Sign Up with FaceBook<i
+                      class="fa-brands fa-facebook-f icon-fb"></i></button>
+                  <button type="submit" class=" button-google btn" style="font-weight: bold;">Sign Up with
+                    Google <i class="fa-brands fa-google icon-fb"></i></button>
+                  <small id="emailHelp" class="form-text text-muted">Don't worry, we won't post anything to your social
+                    accounts without your permission.</small>
+                </form>
+              </div>
+              <!-- box 2 -->
+              <div class="box2-login  col-lg-6 col-md-12 col-sm-12 col-12">
+                <form>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1" style="font-family: sans-serif;"> Login By Email</label>
+                    <input type="email" class="mail-textbox my-3" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter email">
+                    <input type="email" class="mail-textbox" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter Password">
+
+                    <div class="form-check mb-2 justify-content-left">
+                      <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                      <label class="form-check-label" for="autoSizingCheck">
+                        Remember me
+                      </label>
+                    </div>
+                    <div class="text-sm-center"><a href="#">
+                        <p class="text-dark"> Forget Password</p>
+                      </a></div>
+
+                    <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+                  </div>
+                  <button type="submit" class=" button-signup btn btn-warning"
+                    style="font-weight: bold;">Signup</button>
+                  <small id="emailHelp" class="form-text text-muted">By signing up, I accept the terms of use agreement.
+                    <br> An email will be sent to confirm my account.</small>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <p class="footer"><a href="#" data-toggle="modal" data-target="#JoinModal">Click Here to Sign Up!</a></p>
+          <p>© 2022-2023 Yellow Page.com, Inc. · <a href="#">Privacy</a> · <a href="#">Contact Us</a></p>
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="container-sm">100% wide until small breakpoint</div> -->
+  <!-- <div style="background-image: url(img.png); height: 50vh;"></div>  -->
+  <!-- crousal -->
+  <!-- this crousal take from w3school -->
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <!-- make the class c-img and put funtionality on css -->
+        <img class="c-img" src="grocery.png" width="100%" style="height: 50vh;" alt="Los Angeles">
+        <div class="carousel-caption">
+          <h3 class="text-warning font-weight-bold font-italic">Shop.Taste.Live <br><span
+              class="text-light">Discover</span></h3>
+          <!-- search box and button code -->
+          <div>
+            <form>
+              <div class="form-group">
+                <input type="email" class="search-textbox" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Grocery Here">
+              </div>
+              <button type="submit" class=" button-search btn btn-warning" style="font-weight: bold;">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="c-img" src="resturant.png" width="100%" style="height: 50vh;" alt="Chicago">
+        <div class="carousel-caption">
+          <h3 class="text-warning font-weight-bold font-italic">Shop.Taste.Live <br><span
+              class="text-light">Discover</span></h3>
+          <!-- search box and button code -->
+          <div>
+            <form>
+              <div class="form-group">
+                <input type="email" class="search-textbox" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Resturant Here">
+              </div>
+              <button type="submit" class=" button-search btn btn-warning" style="font-weight: bold;">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="c-img" src="hotel.png.jpg" width="100%" style="height: 50vh;" alt="New York">
+        <div class="carousel-caption">
+          <h3 class="text-warning font-weight-bold font-italic">Shop.Taste.Live <br><span
+              class="text-light">Discover</span></h3>
+          <!-- search box and button code -->
+          <div>
+            <form>
+              <div class="form-group">
+                <input type="email" class="search-textbox" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Hotels Here">
+              </div>
+              <button type="submit" class=" button-search btn btn-warning" style="font-weight: bold;">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+
+  </div>
+
+  <!-- menue nave here -->
+  <div class="menue-nave container-fluid">
+    <ul class=" color2 nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Grocery Stores</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Resturants</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Hotels</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Medical Clinics</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="text-center">
+    <p class="p1">Looking for Ideas & Tips</p>
+  </div>
+  <!-- cards code here -->
+  <!-- row1 -->
+  <!-- here i use total 8 cloumns in which xl lg md devices each card cover 3 columns in sm and xs=col devices cover total columns which is 8 and remain center -->
+  <div class="row  justify-content-center">
+    <!-- card1 -->
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-8 col-8 my-2 mystyle">
+      <div class="card" style="width: 200px">
+        <img class="card-img" src="g2.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Grocery</h4>
+          <p class="card-text">8 tips to eat healthy in buget</p>
+          <a href="#">see more>></a>
+        </div>
+      </div>
+    </div>
+    <!-- card2 -->
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-8 col-8 my-2 mystyle">
+      <div class="card" style="width: 200px">
+        <img class="card-img" src="pz2.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Resturant</h4>
+          <p class="card-text">Pizza perfection: 10 must-try Canadian</p>
+          <a href="#">see more>></a>
+        </div>
+      </div>
+    </div>
+    <!-- card3 -->
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-8 col-8 my-2 mystyle">
+      <div class="card" style="width: 200px">
+        <img class="card-img" src="kicthen.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Kicthen</h4>
+          <p class="card-text">15: tips to renovate of your home Kicthen</p>
+          <a href="#">see more>></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- row2 -->
+  <div class="row justify-content-center">
+    <!-- card1 -->
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-8 col-8 my-2 mystyle">
+      <div class="c-gr">Hotels & Room</div>
+      <div class="card" style="width: 200px">
+        <img class="card-img" src="hotel.png.jpg" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Ramada</h4>
+          <p class="card-text">How to Book Rooms in buget</p>
+          <a href="#">see more>></a>
+        </div>
+      </div>
+    </div>
+    <!-- card2 -->
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-8 col-8 my-2 mystyle">
+      <div class="c-gr">Services</div>
+      <div class="card" style="width: 200px">
+        <img class="card-img" src="services.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Services</h4>
+          <p class="card-text">Pizza perfection: 10 must-try Canadian</p>
+          <a href="#">see more>></a>
+        </div>
+      </div>
+    </div>
+    <!-- card3 -->
+    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-8 col-8 my-2 mystyle">
+      <div class="c-gr">Dine In</div>
+      <div class="card" style="width: 200px">
+        <img class="card-img" src="dine.png" alt="Card image">
+        <div class="card-body">
+          <h4 class="card-title">Reservation</h4>
+          <p class="card-text">Reservation your area and much more</p>
+          <a href="#">see more>></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- i use crousal for bg image make it center by use d-flex and justify... -->
+  <div class="carousel-item active d-flex justify-content-center my-3">
+    <!-- make the class c-img and put funtionality on css -->
+    <img class="c-img" src="w1.png" width="85%" style="height: 40vh;" alt="Los Angeles">
+    <div class="carousel-caption">
+      <h3 class="text-light font-italic">Fuel your business growth with Yellow Pages</h3>
+      <!-- search box and button code -->
+      <div>
+        <form>
+          <button type="submit" class=" btn-discover btn btn-warning my-3">Discover More</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- above footer yellow bar -->
+  <!-- main container -->
+  <div class="container-fluid yellow-bar">
+    <!-- main row -->
+    <div class="row text-center d-flex justify-content-center">
+      <!-- box1 with first paragraph -->
+      <div class="box1 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+        <p class="my-3 para1">Live. Shop. Taste.
+          <span class="sp1">Discover.</span>
+        </p>
+      </div>
+      <!-- box2 with middle paragraph -->
+      <div class="box2 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+        <p class="my-2 para2">Looking for goods, services, directions or even deals? <br>
+          Find it all and more on the YP app</p>
+      </div>
+      <!-- box3 with button end -->
+      <div class="box3 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+        <div class="mx-2 my-4">
+          <button type="button" class="btn button-gp btn-dark"><i class="fa-brands fa-google-play"></i>
+            Google Play
+          </button>
+          <button type="button" class="btn button-gp btn-dark"><i class="fa-brands fa-apple"></i>
+            Apple Store
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- logo and contact us footer -->
+  <div class="container-fluid bottom-foot my-4">
+    <img height="32px" width="103px" class="my-2"
+      src="//static.yellowpages.ca/ypca/ypui-6.76.0.1-20230314.0455/resources/images/verticals/yellowpages/logo-en.svg"
+      alt="">
+    <span>Yellow Pages</span>
+    <div class=" float-right my-2">
+      <a href="">Contact Us</a>
+    </div>
+  </div>
+
+  <!-- collapse menue -->
+  <div class="container-fluid d-flex justify-content-center">
+    <div class="row">
+      <!-- box 1 -->
+      <div class="box1 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 ">
+        <div id="accordion">
+          <div class="card card-color">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link c-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  Popular Search
+                </button>
+              </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                <li class="color3"><a href="#">Restrant</a></li>
+                <li class="color3"><a href="#">Hotels</a></li>
+                <li class="color3"><a href="#">Pizzas</a></li>
+                <li class="color3"><a href="#">Grocery</a></li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- box2 -->
+      <div class="box2 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 ">
+        <div id="accordion">
+          <div class="card card-color">
+            <div class="card-header" id="headingtwo">
+              <h5 class="mb-0">
+                <button class="btn btn-link c-link" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="true"
+                  aria-controls="collapsetwo">
+                  Adertisers
+                </button>
+              </h5>
+            </div>
+            <div id="collapsetwo" class="collapse show" aria-labelledby="headingtwo" data-parent="#accordion">
+              <div class="card-body">
+                <li class="color3"><a href="#">Advertise Us</a></li>
+                <li class="color3"><a href="#">Add Free Listing</a></li>
+                <li class="color3"><a href="#">Fraud Prevention</a></li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- box3 -->
+      <div class="box3 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 ">
+        <div id="accordion">
+          <div class="card card-color">
+            <div class="card-header" id="headingthree">
+              <h5 class="mb-0">
+                <button class="btn btn-link c-link" data-toggle="collapse" data-target="#collapsethree" aria-expanded="true"
+                  aria-controls="collapsethree">
+                  About Us
+                </button>
+              </h5>
+            </div>
+            <div id="collapsethree" class="collapse show" aria-labelledby="headingthree" data-parent="#accordion">
+              <div class="card-body">
+                <li class="color3"><a href="#">Contact YP</a></li>
+                <li class="color3"><a href="#">Careers</a></li>
+                <li class="color3"><a href="#">Corporates</a></li>
+                <li class="color3"><a href="#">Investors</a></li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- box4 -->
+      <div class="box4 col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 ">
+        <div id="accordion">
+          <div class="card card-color">
+            <div class="card-header" id="headingfour">
+              <h5 class="mb-0">
+                <button class="btn btn-link c-link" data-toggle="collapse" data-target="#collapsefour" aria-expanded="true"
+                  aria-controls="collapsefour">
+                  Mobile & Tools
+                </button>
+              </h5>
+            </div>
+            <div id="collapsefour" class="collapse show" aria-labelledby="headingthree" data-parent="#accordion">
+              <div class="card-body">
+                <li class="color3"><a href="#">FaceBook follow YP</a></li>
+                <li class="color3"><a href="#">Follow Instagram</a></li>
+                <li class="color3"><a href="#">Follow Twitter</a></li>
+                <li class="color3"><a href="#">Follow on page</a></li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<!-- main footer here -->
+<footer class="container my-3">
+  <p class="float-right"><a href="#">Back to top</a></p>
+  <p class="footer-para">Yellow PagesTM, Walking Fingers & DesignTM, YP.caTM, YellowPages.caTM, Canada411TM, are trademarks of Yellow Pages Digital & Media Solutions Limited in Canada. All other trademarks are the property of their respective owners. Copyright © 2023 <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+</footer>
+
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

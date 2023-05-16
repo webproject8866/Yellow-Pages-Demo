@@ -1,0 +1,150 @@
+.navbar {
+    background-color: #f3d111;
+}
+
+.color1 a{
+    color: black;
+}
+.color1 a:hover{
+    color:white;
+}
+.button-signup{
+    background-color: #f3d111;
+    width: 17rem;
+}
+.button-fb{
+    background-color: #5175ec;
+    width: 17rem;
+    text-align: left;
+    color: white;
+}
+.button-google{
+    background-color: #be0707;
+    width: 17rem;
+    text-align: left;
+    color: white;
+}
+.icon-fb{
+    float: right;
+}
+/* this class make my own just inspect and copy the css codes of forms inputs and just change the width */
+.mail-textbox{
+    width: 79%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-ou
+}
+/* make the class of images and put the  filters on it */
+.c-img{
+    filter: brightness(30%);
+}
+.search-textbox{
+    /* here i change the widht into rem */
+    width: 15rem; 
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 0.5;
+    /* border-radius: 50px; */
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .80rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}
+.button-search{
+    background-color: #f3d111;
+    width: 10rem;
+    border-radius: 3rem;
+}
+.color2 a{
+    color: black;
+    /* padding: 2rem; */
+    font-weight: bold;
+}
+.color2 a:hover{
+    color:rgb(216, 197, 27);
+}
+.p1{
+    font-size: xx-large;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: black;
+}
+.c-gr{
+    margin-left: 0rem;
+    font-size: large;
+    color: rgb(110, 107, 107);
+    /* font-weight: bold; */
+    
+}
+body{
+    background-color: #e8eaec;
+}
+/* this codes if fore card hover styles */
+.mystyle{
+    transition: 0.6s;
+}
+.mystyle:hover{
+    transform: scale(1.12);
+    /* box-shadow: 1px 1px 1px 1px black; */
+}
+.btn-discover{
+    background-color: #f3d111;
+    width: 10rem;
+    border-radius: 3rem;
+    color: black;
+    font-size: large;
+}
+.yellow-bar{
+    background-color: #f3d111;
+    
+}
+.para1{
+    font-size: x-large;
+    font-family: calibri;
+    font-weight: bold;
+    color: black;
+}
+.sp1{
+    color: white;
+}
+.para2{
+    font-size: large;
+    font-family: calibri;
+    /* font-weight: bold; */
+    color: black;
+}
+.button-gp{
+    background-color: black;
+    font-family: calibari;
+    transition: 0.6s;
+}
+.button-gp:hover{
+    transform: scale(1.12);
+}
+.bottom-foot{
+    border-bottom: solid 1px rgb(172, 167, 167);
+    
+}
+.color3 a{
+    color: rgb(122, 120, 120);
+    font-family: cilibri;
+}
+.c-link{
+    color: black;
+}
+.footer-para{
+    color: rgb(160, 153, 153);
+    font-size: x-small;
+}
+.card-color{
+    background-color:  #e8eaec;
+}
